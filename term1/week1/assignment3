@@ -1,0 +1,12 @@
+class Main {
+  public static void main(String[] args) {
+   //personal information of John Doe
+
+   /*insert data type */ age = 39;
+   /*insert data type */ height = 1.78;
+   /*insert data type */ firstLetterFirstName = 'J';
+   /*insert data type */ wholeSurname = "Doe";
+   /*insert data type */ genderIsMale = true;
+
+  }
+}
