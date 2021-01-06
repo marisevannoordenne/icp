@@ -3,7 +3,7 @@ class Main {
    //personal information of John Doe
 
    /*insert data type */ ageInYears = 39;
-   /*insert data type */ heightInMeters = 1.78;
+   /*insert data type */ heightInCentimeters = 178;
    /*insert data type */ firstLetterFirstName = 'J';
    /*insert data type */ wholeSurname = "Doe";
    /*insert data type */ genderIsMale = true;
