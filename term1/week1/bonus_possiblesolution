@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scannerInput = new Scanner(System.in);
+
+    int ageInYears = 39;
+    double heightInMeters = 1.78;
+    char firstLetterFirstName = 'J';
+    String wholeSurname = "Doe";
+    boolean genderIsMale = true;
+    
+    int ageInDays = ageInYears * 365;
+    double heightInFeet = heightInMeters * 3.28;
+
+    System.out.println("What is the eye color of John Doe?");
+
+    String eyeColor = scannerInput.nextLine();
+
+    System.out.println("This is the personal information for " + firstLetterFirstName + " " + wholeSurname);
+    System.out.println("It is " + genderIsMale + " that J. Doe is male");
+    System.out.println("J. Doe's age in days is "+ ageInDays);
+    System.out.println("J. Doe's height in feet is "+ heightInFeet);
+    System.out.println("J. Doe's eye color is " + eyeColor);
+
+  }
+}
