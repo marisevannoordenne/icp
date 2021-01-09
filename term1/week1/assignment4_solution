@@ -1,0 +1,18 @@
+class Main {
+  public static void main(String[] args) {
+   //personal information of John Doe
+
+   int ageInYears = 39;
+   double heightInCentimeters = 178;
+   char firstLetterFirstName = 'J';
+   String wholeSurname = "Doe";
+   boolean genderIsMale = true;
+   
+   int ageInDays = ageInYears * 365;
+   double heightInMeters = heightInCentimeters / 100;
+   
+   System.out.println("ageInDay: "+ ageInDays);
+   System.out.println("heightInMeters: "+ heightInMeters);
+
+  }
+}
