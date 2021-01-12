@@ -1,0 +1,11 @@
+class Main {
+  public static void main(String[] args) {
+    
+    int birthYear = 
+    int currentYear = 
+    int legalDrivingAge = 18;
+    int age = 
+    int yearsToGo =
+
+    /* check here if the user is old enough to drive */ 
+  }
