@@ -1,0 +1,11 @@
+class Main {
+  public static void main(String[] args) {
+    
+    boolean BidenForPresident = true;
+
+    int year = 
+      
+    /* insert if-statement to check if Biden is president */ 
+
+  }
+}
