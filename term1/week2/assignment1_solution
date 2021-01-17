@@ -1,0 +1,17 @@
+class Main {
+  public static void main(String[] args) {
+    
+    int birthYear = 1998;
+    int currentYear = 2021;
+    int legalDrivingAge = 18;
+    int age = currentYear - birthYear;
+    int yearsToGo = legalDrivingAge - age;
+
+    if (age > legalDrivingAge){
+      System.out.println("You could drive a car!");
+    }
+    else {
+      System.out.println("Sorry, still " + yearsToGo + " years to go...");
+    }
+  }
+}
