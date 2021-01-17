@@ -1,0 +1,14 @@
+class Main {
+  public static void main(String[] args) {
+   
+    boolean BidenForPresident;
+    int year = 2021;
+    
+    if (year == 2021){
+      BidenForPresident = true;
+    }
+
+    System.out.println("Will Biden be the president in " + year + "? " + BidenforPresident);
+    
+  }
+}
