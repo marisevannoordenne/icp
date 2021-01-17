@@ -1,0 +1,15 @@
+class Main {
+  public static void main(String[] args) {
+   
+    boolean BidenForPresident = true;
+    year = 2021;
+
+    if (BidenForPresident && year == 2021){
+          System.out.println("Biden is indeed the president of the United States!");
+    }
+    else {
+      System.out.println("Nope, the United States have a different president."); 
+    }
+
+  }
+}
