@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner scannerInput = new Scanner(System.in);    
+    
+    System.out.println("For what year do you want to know the president of the United States?");
+    
+    int year = scannerInput.nextInt();
+
+    if (year == 2021){
+          System.out.println("The president of the United States is Joe Biden!");
+    }
+    else if (year < 2021 && year >= 2017) {
+      System.out.println("The president of the United States is Donald Trump!"); 
+    }
+    else if (year < 2017 && year >= 2009) {
+      System.out.println("The president of the United States is Barack Obama!"); 
+    }
+    else if (year < 2009 && year >= 2001) {
+      System.out.println("The president of the United States is George W. Bush!"); 
+    }
+    
+    // you could expand this by just adding more and more else if statements
+  }
+}
