@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int number1, number2;
+    Scanner input = new Scanner(System.in);
+
+    number1 = (int) (Math.random() * 10);
+    number2 = (int) (Math.random() * 10);
+  
+
+  }
+}
