@@ -1,10 +1,16 @@
+import java.util.Scanner;
+
 class Main {
  public static void main(String[] args) {
-  int i = 0;
- 
-  while (i < 10){
-   System.out.println(i);
-  }
+   // variable to store the numbers recieved as input
+   int sum = 0;
+
+   // create an object of Scanner class
+   Scanner input = new Scanner(System.in);
+   
+   // take integer input from the user
+   System.out.println("Enter a number");
+   int number = input.nextInt(); 
 
  }
 }
