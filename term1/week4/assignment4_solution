@@ -1,0 +1,16 @@
+class Main {
+  public static void main(String[] args) {
+    double salary = 12000;
+    double sum = 12000;
+
+    // loop 9 times, because the first year is already done.
+    for (int i = 0; i < 9; i++) {
+      salary = salary * 1.01;
+      sum = sum + salary;
+    }
+
+    System.out.println("After 10 years you earn" + salary + " and " +
+        "have earned a total of " + sum);
+
+  }
+}
