@@ -1,0 +1,18 @@
+class Main {
+    //method without return type defined
+    static void display1(){
+        System.out.println("Method without parameter");
+    }
+    
+    //method with parameter and without return type defined
+    static void display2(int a){
+        System.out.println("Method with a parameter: " + a);
+    }
+
+
+    public static void main(String[] args) {
+        //methods called
+        display1();
+        display2(1);
+    }
+}
