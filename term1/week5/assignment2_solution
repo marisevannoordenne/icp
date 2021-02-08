@@ -1,0 +1,25 @@
+public class Main {
+
+  // method for square calculation defined
+  static int getSquare(int x){
+    return x * x;
+  }
+
+  //method for power of three calculation defined
+  static int getPowerOfThree(int x){
+      return x * x * x; 
+  }
+
+  public static void main(String[] args) {
+      //define number
+      int number = 5; 
+
+      // method call
+      int resultSquare = getSquare(number);
+      int resultPowerOfThree = getPowerOfThree(number);
+
+      // print results
+      System.out.println("Square of " + number + " is: " + resultSquare);
+      System.out.println(number + " to the power of three is: " + resultPowerOfThree);
+  }
+}
