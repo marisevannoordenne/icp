@@ -1,0 +1,9 @@
+class Main {
+   public static void main(String[] args) {
+        //declare and initialize and array
+        String[] studentNames = {"Bob", "Jan", "Gabriel", "Rosa", "Louise"};
+        
+        String searchName = "Jantien";
+        boolean found = false;
+  }
+}
