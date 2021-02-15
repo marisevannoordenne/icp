@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int[] grades = new int[4];
+
+    System.out.println("Please enter all your grades");
+
+    // Reads your entered grades.
+    for (int i = 0; i < grades.length; i++) {
+      grades[i] = input.nextInt();
+    }
+
+    // Defined variables to calculate the average
+    double sum = 0, average = 0;
+
+    // For loop that will add each value in the array to the sum.
+
+
+    // Store divion of sum by number of placeholders in average variable.
+
+
+    // Print the average of your grades in the console
+    System.out.println("Average is: " + average);
+  }
+}
