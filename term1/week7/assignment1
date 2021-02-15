@@ -1,0 +1,5 @@
+class Main {
+  public static void main(String[] args) {
+      //declare and initialize and array
+      String[] colours = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"};
+}
