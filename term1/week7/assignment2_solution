@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    // declare an array and allocate memory
+    int[] myArray = new int[10];
+
+    System.out.println("Please enter 10 numbers");
+
+    // Ask user for 10 numbers.
+    for (int i = 0; i < myArray.length; i++) {
+      myArray[i] = input.nextInt();
+    }
+
+    // Prints 10 numbers in reversed order.
+    for (int i = myArray.length-1; i >= 0; i--) {
+      System.out.println("10 numbers in reverse: ");
+      System.out.println(myArray[i]);
+    }
+  }
+}
