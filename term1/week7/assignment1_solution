@@ -1,0 +1,16 @@
+class Main {
+  public static void main(String[] args) {
+      //declare and initialize and array
+      String[] colours = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"};
+
+      //edit placeholder 0 and 6 of array
+      colours[0] = "black";
+      colours[6] = "white";
+
+      //print all placeholders of array
+      for (int i = 0; i < colours.length; i++){
+          System.out.println(colours[i]);
+      }
+
+  }
+}
