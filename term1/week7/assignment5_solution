@@ -1,0 +1,26 @@
+class Main {
+   public static void main(String[] args) {
+        //declare and initialize and array
+        String[] studentNames = {"Bob", "Jan", "Gabriel", "Rosa", "Louise"};
+        
+        String searchName = "Jantien";
+        boolean found = false;
+        
+        //check  if searchName can be found in array. 
+        for (int i = 0; i < studentNames.length; i++) {
+            if (studentNames[i] == searchName) {
+                //set boolean to true if name is found and break out of loop
+                found = true;
+                break;
+            }
+        }
+        
+        //print searchName is found if found is true, print searchName is not found if found is false 
+        if(found){
+            System.out.println(searchName + " is found.");
+        }
+        else{
+            System.out.println(searchName + " is not found.");
+        }
+  }
+}
