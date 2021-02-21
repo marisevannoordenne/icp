@@ -1,0 +1,39 @@
+class Car{
+    //instance variables
+    int yearModel, speed;
+    String model;
+
+    //constructor with speed, model, year model
+    Car(int newYear ,String newModel){
+        this.speed = 0;
+        this.yearModel = newYear;
+        this.model = newModel;
+    }
+    
+    // increases speed
+    public void accelerate(){
+        speed = speed + 5;
+    }
+
+    // decreases speed
+    public void brake(){
+        speed = speed - 5;
+    }
+
+    // returns type of car
+    public String getModel(){
+        return model;
+    }
+
+    // returns speed
+    public int getSpeed(){
+         return speed;
+     }
+
+    // returns year produced
+    public int getYear(){
+        return yearModel;
+    }
+
+
+}
