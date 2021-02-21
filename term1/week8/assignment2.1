@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+
+        // create an object for our car class
+       Car nissan = new Car(2010 , "Skyline");
+
+        // accelerate the car
+       for (int x = 0; x < 5; x++){
+
+           nissan.accelerate();
+           System.out.println("The " + (nissan.getModel()) + " is traveling @ " + (nissan.getSpeed()) + " MPH.");
+       }
+       
+        //brake the car
+       for (int x = 0; x < 5; x++){
+           nissan.brake();
+           System.out.println("The " + (nissan.getModel()) + " is traveling @ " + (nissan.getSpeed()) + " MPH.");
+       }
+    }
+
+}
