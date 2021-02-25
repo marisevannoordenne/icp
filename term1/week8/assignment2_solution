@@ -1,0 +1,65 @@
+class Car{
+    //instance variables
+    int yearModel, speed, mph;
+    String model;
+
+    //constructor with speed, model, year model
+    Car(int mph, int speed, int yearModel ,String model){
+        this.mph = mph; 
+        this.speed = speed;
+        this.yearModel = yearModel;
+        this.model = model;
+    }
+    
+    // increases speed
+    public void accelerate(){
+        speed = speed + mph;
+    }
+
+    // decreases speed
+    public void brake(){
+        speed = speed - mph;
+    }
+
+    // returns type of car
+    public String getModel(){
+        return model;
+    }
+
+    // returns speed
+    public int getSpeed(){
+         return speed;
+     }
+
+    // returns year produced
+    public int getYear(){
+        return yearModel;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        // create an object for our car class
+       Car nissan = new Car(5, 80, 2010 , "Skyline");
+       Car fiat = new Car(10, 50, 2012, "500");
+
+        // accelerate the car
+       for (int x = 0; x < 5; x++){
+
+           nissan.accelerate();
+           fiat.accelerate();
+           System.out.println("The " + (nissan.getModel()) + " is traveling @ " + (nissan.getSpeed()) + " MPH.");
+           System.out.println("The " + (fiat.getModel()) + " is traveling @ " + (fiat.getSpeed()) + " MPH.");
+       }
+
+        //brake the car
+       for (int x = 0; x < 5; x++){
+           nissan.brake();
+           fiat.brake();
+           System.out.println("The " + (nissan.getModel()) + " is traveling @ " + (nissan.getSpeed()) + " MPH.");
+           System.out.println("The " + (fiat.getModel()) + " is traveling @ " + (fiat.getSpeed()) + " MPH.");
+       }
+    }
+
+}
