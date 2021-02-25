@@ -1,0 +1,37 @@
+/*
+ * Class circle. Has radius and methods related to circles.
+ */
+class Circle {
+ double radius = 1;
+
+  /* Returns area of circle. 
+   */
+  double getArea() {
+    return Math.PI * radius * radius;
+  }
+
+  /* Returns circumference of circle. 
+   */
+  double getCircumference() {
+    return 2 * Math.PI * radius;
+  }
+  /* Returns radius of circle.
+   */
+  double getRadius() {
+    return radius;
+  }
+}
+
+
+class Main {
+  /* Creates two circles and prints their properties. 
+   */
+  public static void main(String[] args) {
+    Circle circle1 = new Circle();
+
+    System.out.println("circle1 default");
+    System.out.println("radius circle1: " + circle1.getRadius());
+    System.out.println("circumference circle1: " + circle1.getCircumference());
+    System.out.println("area circle1: " + circle1.getArea());
+  }
+}
