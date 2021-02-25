@@ -1,0 +1,30 @@
+class BankAccount {
+  double balance = 0;
+
+  void deposit(double amount) {
+    balance = balance + amount;
+  }
+
+  double getBalance() {
+    return balance;
+  }
+
+  double addInterest(double interestRate) {
+    double increase = interestRate * balance;
+    return increase;
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    BankAccount myAccount = new BankAccount();
+
+    System.out.println("Balance " + myAccount.getBalance());
+    myAccount.deposit(1000);
+    System.out.println("Balance after deposit " + myAccount.getBalance());
+
+    System.out.println("Increase of balance after interest calculation: " + myAccount.addInterest(0.04));
+    myAccount.deposit(myAccount.addInterest(0.04));
+    System.out.println("Balance after deposit and interest calculation: " + myAccount.getBalance());
+  }
+}
