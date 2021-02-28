@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please put in a string:");
+        String string1 = input.nextLine();
+
+        System.out.println("Please put in another string:");
+        String string2 = input.nextLine(); 
+
+        if (string1.equals(string2)) {
+            System.out.println("They are equal.");
+        }
+        else {
+            System.out.println("They are not equal.");
+        }
+
+    }
+}
