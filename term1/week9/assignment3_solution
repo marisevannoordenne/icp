@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+/* class Plant. Keeps track of current water level of plant and compares this to optimal water level. 
+*/
+
+class Plant {
+  int currentWaterLevel;
+  int optimalWaterLevel;
+  // could also be written as int currentWaterlevel, optimalWaterLevel;
+
+  Plant(int currentWaterLevel, int optimalWaterLevel) {
+    this.currentWaterLevel = currentWaterLevel;
+    this.optimalWaterLevel = optimalWaterLevel;
+  }
+
+  /* Gives water to the plant
+   */
+  void giveWater(int water) {
+    currentWaterLevel = currentWaterLevel + water;
+    // could also be written as currentWaterLevel += water;
+  }
+
+  /* Reduces water by 2
+  */
+  void waitDay() {
+    currentWaterLevel = currentWaterLevel - 2;
+  }
+
+  String checkHealth() {
+    int diff = currentWaterLevel - optimalWaterLevel;
+
+    if (diff > 5 || diff < -5) {
+      return "This plant is dead.";
+    }
+    if (diff > 3) {
+      return "Too much water, don't do anything!";
+    }
+    if (diff < -3) {
+      return "Give water quick!";
+    }
+
+    return "All good";
+  }
+}
+
+class Main {
+
+  public static void main(String[] args) {
+    // create new object for plant
+    Plant fern = new Plant(5, 5);
+
+    // a linear story of the plant in code
+    System.out.println(fern.checkHealth());
+    fern.waitDay();
+    fern.waitDay();
+    System.out.println(fern.checkHealth());
+    fern.giveWater(8);
+    System.out.println(fern.checkHealth());
+    fern.giveWater(2);
+    System.out.println(fern.checkHealth());
+    
+  }
+}
