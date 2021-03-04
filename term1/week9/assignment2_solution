@@ -1,0 +1,73 @@
+/**
+ * The Date class models a birthday with day, month and year.
+ * This class does not perform input validation for day, month and year.
+ * source: https://www3.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html
+ */
+class Birthday {
+   // The private instance variables
+   private int year;
+   private int month;
+   private int day;
+
+   /** Constructs a Date instance with the given year, month and day. No input validation */
+   Birthday(int year, int month, int day) {
+      this.year = year;
+      this.month = month;
+      this.day = day;
+   }
+
+   // The public getters/setters for the private variables
+   // Returns the year
+   public int getYear() {
+      return this.year;
+   }
+   // Returns the month 
+   public int getMonth() {
+      return this.month;
+   }
+   // Returns the day 
+   public int getDay() {
+      return this.day;
+   }
+   // Sets the year.  
+   public void setYear(int year) {
+      this.year = year;
+   }
+   // Sets the month. 
+   public void setMonth(int month) {
+      this.month = month;
+   }
+   // Sets the day. 
+   public void setDay(int day) {
+      this.day = day;
+   }
+
+   /** Sets year, month and day. No input validation */
+   public void setDate(int year, int month, int day) {
+      this.year = year;
+      this.month = month;
+      this.day = day;
+   }
+}
+
+/**
+ * Main method for class Birthday
+ */
+public class Main {
+   public static void main(String[] args) {
+      // Test constructor and toString()
+      Birthday myBirthday = new Birthday(2020, 2, 8);
+      System.out.println("my birthday is on: " + myBirthday.getYear() + "/" + myBirthday.getMonth() + "/" + myBirthday.getDay()); 
+
+      // Test Setters and Getters
+      myBirthday.setYear(1999);
+      myBirthday.setMonth(12);
+      myBirthday.setDay(23);
+      System.out.println("my friend's birthday is on: " + myBirthday.getYear() + "/" + myBirthday.getMonth() + "/" + myBirthday.getDay());
+
+      // Test setDate()
+      myBirthday.setDate(1958, 1, 2);
+      System.out.println("my family member's birthday is on: " + myBirthday.getYear() + "/" + myBirthday.getMonth() + "/" + myBirthday.getDay());
+      //01/02/2988
+   }
+}
