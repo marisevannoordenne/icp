@@ -68,6 +68,5 @@ public class Main {
       // Test setDate()
       myBirthday.setDate(1958, 1, 2);
       System.out.println("my family member's birthday is on: " + myBirthday.getYear() + "/" + myBirthday.getMonth() + "/" + myBirthday.getDay());
-      //01/02/2988
    }
 }
