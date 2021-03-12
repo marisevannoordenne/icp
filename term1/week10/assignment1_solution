@@ -1,0 +1,99 @@
+class Main {
+  public static void main(String[] args) {
+    //create array of the class Shape
+    Shape[] shapes = new Shape[5];
+
+    //create 5 new objects inside the shapes array
+    shapes[0] = new Shape();
+    shapes[1] = new Circle();
+    shapes[2] = new Circle(2);
+    shapes[3] = new Rectangle();
+    shapes[4] = new Rectangle(2, 3);
+    
+    // print all properties of the objects of the array
+    for (int i = 0; i < shapes.length; i++) {
+      System.out.println(shapes[i].getString());
+    }
+  }
+}
+
+class Shape {
+  Shape() {
+  }
+
+  //set to 0 as shape is unknown
+  double getArea() {
+    return 0;
+  }
+
+  //set to 0 as shape is unknown
+  double getCircumference() {
+    return 0;
+  }
+
+  
+  //use one method to return all return values of methods of class as String
+  String getString() {
+    return "Shape with area " + getArea() + ", circumference " + getCircumference();
+  }
+}
+
+class Circle extends Shape {
+  //private instance variable that can only be used for this subclass
+  private double radius;
+
+  //predefined constructor
+  Circle() {
+    radius = 1;
+  }
+  
+  //constructor that needs to be defined in main method
+  Circle(double radius) {
+    this.radius = radius;
+  }
+
+  //overwrite method of superclass with known getArea formula of circle
+  double getArea() {
+    return Math.PI * radius * radius;
+  }
+ 
+  //overwrite method of superclass with known getCircumference formula of circle
+  double getCircumference() {
+    return 2 * Math.PI * radius;
+  }
+
+  //use one method to return all return values of methods of class as String 
+  String getString() {
+    return "Circle with radius " + radius + ", area " + getArea() + ", circumference " + getCircumference();
+  }
+
+}
+
+class Rectangle extends Shape {
+  //private instance variables that can only be used for this subclass
+  private double length;
+  private double width;
+  
+  Rectangle() {
+    length = 1;
+    width = 1;
+  }
+
+  Rectangle(double length, double width) {
+    this.length = length;
+    this.width = width;
+  }
+
+  double getArea() {
+    return length * width;
+  }
+
+  double getCircumference() {
+    return 2 * length + 2 * width;
+  }
+
+  String getString() {
+    return "Rectangle with length " + length + " and width " + width + ", area " + getArea() + ", circumference "+ getCircumference();
+  }
+
+}
