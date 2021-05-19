@@ -1,9 +1,9 @@
 CREATE TABLE game
-    (`game_id` int, `name` varchar(44), `platform_key` varchar(4), `year` int, `genre` varchar(12), `publisher_id` int, `NA_Sales` int, `EU_Sales` int, `JP_Sales` int, `Other_Sales` int, `Global_Sales` int)
+    (`game_id` int, `name` varchar(44), `platform_key` varchar(4), `year` int, `genre` varchar(12), `publisher_id` int)
 ;
     
 INSERT INTO game
-    (`game_id`, `name`, `platform_key`, `year`, `genre`, `publisher_id`, `NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales`, `Global_Sales`)
+    (`game_id`, `name`, `platform_key`, `year`, `genre`, `publisher_id`)
 VALUES
     (1, 'Wii Sports', 'Wii', 2006, 'Sports', 1, 4149, 2902, 377, 846, 8274),
     (2, 'Super Mario Bros.', 'NES', 1985, 'Platform', 1, 2908, 358, 681, 77, 4024),
