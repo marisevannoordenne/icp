@@ -1,19 +1,3 @@
-CREATE TABLE vg_sales (
-  `rank` INTEGER,
-  `name` VARCHAR(44),
-  `platform` VARCHAR(4),
-  `year` INTEGER,
-  `genre` VARCHAR(12),
-  `publisher` VARCHAR(27),
-  `NA_Sales` INTEGER,
-  `EU_Sales` INTEGER,
-  `JP_Sales` INTEGER,
-  `other_Sales` INTEGER,
-  `global_Sales` INTEGER
-);
-
-INSERT INTO vg_sales
-  (`rank`, `name`, `platform`, `year`, `genre`, `publisher`, `NA_Sales`, `EU_Sales`, `JP_Sales`, `other_Sales`, `global_Sales`)
 VALUES
   ('1', 'Wii Sports', 'Wii', '2006', 'Sports', 'Nintendo', '4149', '2902', '377', '846', '8274'),
   ('2', 'Super Mario Bros.', 'NES', '1985', 'Platform', 'Nintendo', '2908', '358', '681', '77', '4024'),
